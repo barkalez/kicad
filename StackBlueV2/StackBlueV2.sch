@@ -1,0 +1,338 @@
+EESchema Schematic File Version 4
+LIBS:StackBlueV2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5CE6989E
+P 3750 2050
+F 0 "Q1" H 3941 2096 50  0000 L CNN
+F 1 "2N3904" H 3941 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3950 1975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3750 2050 50  0001 L CNN
+	1    3750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5CE69958
+P 3750 2800
+F 0 "Q2" H 3941 2846 50  0000 L CNN
+F 1 "2N3904" H 3941 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3950 2725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3750 2800 50  0001 L CNN
+	1    3750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fer_Drivers:A4988 A1
+U 1 1 5CE69C62
+P 3650 4950
+F 0 "A1" H 3650 5867 50  0000 C CNN
+F 1 "A4988" H 3650 5776 50  0000 C CNN
+F 2 "Drivers:A4988" H 3650 4950 50  0001 C CNN
+F 3 "" H 3650 4950 50  0001 C CNN
+	1    3650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fer_Bluetooth:HC-05 A3
+U 1 1 5CE69D65
+P 8150 3700
+F 0 "A3" H 8181 4215 50  0000 C CNN
+F 1 "HC-05" H 8181 4124 50  0000 C CNN
+F 2 "Bluetooth:HC-05" H 8150 3700 50  0001 C CNN
+F 3 "" H 8150 3700 50  0001 C CNN
+	1    8150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Counter_Clockwise J1
+U 1 1 5CE69F2E
+P 2200 1200
+F 0 "J1" H 2250 1617 50  0000 C CNN
+F 1 "Conn_02x06_Counter_Clockwise" H 2250 1526 50  0000 C CNN
+F 2 "Conectores:2x16 2.54" H 2200 1200 50  0001 C CNN
+F 3 "~" H 2200 1200 50  0001 C CNN
+	1    2200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A2
+U 1 1 5CE6A2C6
+P 5650 5100
+F 0 "A2" H 5300 6100 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6200 4150 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5800 4150 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5650 4100 50  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fer_Reles:SMIH-12VDC-SL-C K2
+U 1 1 5CE6A75A
+P 7600 1800
+F 0 "K2" H 7600 2500 50  0000 L CNN
+F 1 "SMIH-12VDC-SL-C" H 7450 1100 50  0000 L CNN
+F 2 "Reles:SMIH-12VDC-SL-C" H 7800 2100 50  0001 C CNN
+F 3 "" H 7800 2100 50  0001 C CNN
+	1    7600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fer_Reles:SMIH-12VDC-SL-C K1
+U 1 1 5CE6A857
+P 6250 1850
+F 0 "K1" H 6250 2550 50  0000 L CNN
+F 1 "SMIH-12VDC-SL-C" H 6100 1150 50  0000 L CNN
+F 2 "Reles:SMIH-12VDC-SL-C" H 6450 2150 50  0001 C CNN
+F 3 "" H 6450 2150 50  0001 C CNN
+	1    6250 1850
+	1    0    0    -1  
+$EndComp
+Text Label 2000 1000 2    50   ~ 0
+1A
+Text Label 2000 1100 2    50   ~ 0
+1B
+Text Label 2000 1200 2    50   ~ 0
+2A
+Text Label 2000 1300 2    50   ~ 0
+2B
+Text Label 2000 1400 2    50   ~ 0
+SHUTTERFLASH
+Text Label 2000 1500 2    50   ~ 0
+RTN_FLASH
+Text Label 2500 1000 0    50   ~ 0
+VCC
+Text Label 2500 1100 0    50   ~ 0
+ENDSTOP_D13
+Text Label 2500 1200 0    50   ~ 0
+VDD
+Text Label 2500 1300 0    50   ~ 0
+GND
+Text Label 2500 1400 0    50   ~ 0
+RTN_CAM
+Text Label 2500 1500 0    50   ~ 0
+SHUTTERCAM
+Text Label 5550 4100 1    50   ~ 0
+VDD
+Text Label 5850 4100 1    50   ~ 0
+VCC
+Text Label 5150 4700 2    50   ~ 0
+ENHC05_D2
+Text Label 5150 4800 2    50   ~ 0
+MS2_D3
+Text Label 5150 4900 2    50   ~ 0
+MS1_D4
+Text Label 5150 5000 2    50   ~ 0
+MS3_D5
+Text Label 5150 5100 2    50   ~ 0
+RST_D6
+Text Label 5150 5200 2    50   ~ 0
+SHUTTERFLASH_D7
+Text Label 5150 5300 2    50   ~ 0
+DIR_D8
+Text Label 5150 5400 2    50   ~ 0
+STEP_D9
+Text Label 5150 5500 2    50   ~ 0
+TXD_D10
+Text Label 5150 5600 2    50   ~ 0
+RXD_D11
+Text Label 5150 5700 2    50   ~ 0
+SHUTTERCAM_D12
+Text Label 5150 5800 2    50   ~ 0
+ENDSTOP_D13
+Text Label 5650 6100 3    50   ~ 0
+GND
+Text Label 5750 6100 3    50   ~ 0
+GND
+Text Label 3200 4400 2    50   ~ 0
+VDD
+Text Label 3200 4300 2    50   ~ 0
+VCC
+Text Label 3200 4550 2    50   ~ 0
+RST_D6
+Text Label 3200 4650 2    50   ~ 0
+RST_D6
+Text Label 3200 4900 2    50   ~ 0
+STEP_D9
+Text Label 3200 5000 2    50   ~ 0
+DIR_D8
+Text Label 3200 5150 2    50   ~ 0
+MS1_D4
+Text Label 3200 5250 2    50   ~ 0
+MS2_D3
+Text Label 3200 5350 2    50   ~ 0
+MS3_D5
+Text Label 3200 5500 2    50   ~ 0
+GND
+Text Label 4100 5500 0    50   ~ 0
+GND
+Text Label 4100 4750 0    50   ~ 0
+1B
+Text Label 4100 4850 0    50   ~ 0
+1A
+Text Label 4100 4950 0    50   ~ 0
+2A
+Text Label 4100 5050 0    50   ~ 0
+2B
+Text Label 8400 3550 0    50   ~ 0
+RXD_D11
+Text Label 8400 3650 0    50   ~ 0
+TXD_D10
+Text Label 8400 3750 0    50   ~ 0
+GND
+Text Label 8400 3850 0    50   ~ 0
+VCC
+Text Label 8400 3950 0    50   ~ 0
+ENHC05_D2
+$Comp
+L Device:R R1
+U 1 1 5CE6BC67
+P 3400 2050
+F 0 "R1" V 3193 2050 50  0000 C CNN
+F 1 "R" V 3284 2050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3330 2050 50  0001 C CNN
+F 3 "~" H 3400 2050 50  0001 C CNN
+	1    3400 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CE6BD99
+P 3400 2800
+F 0 "R2" V 3193 2800 50  0000 C CNN
+F 1 "R" V 3284 2800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3330 2800 50  0001 C CNN
+F 3 "~" H 3400 2800 50  0001 C CNN
+	1    3400 2800
+	0    1    1    0   
+$EndComp
+Text Label 3250 2050 2    50   ~ 0
+SHUTTERFLASH_D7
+Text Label 3250 2800 2    50   ~ 0
+SHUTTERCAM_D12
+Text Label 3850 1850 0    50   ~ 0
+COLECT_FLASH
+Text Label 3850 2250 3    50   ~ 0
+GND
+Text Label 3850 3000 3    50   ~ 0
+GND
+Text Label 3850 2600 0    50   ~ 0
+COLECT_CAM
+Text Label 6150 1350 2    50   ~ 0
+VDD
+Text Label 6150 1500 2    50   ~ 0
+COLECT_CAM
+Text Label 6150 1950 2    50   ~ 0
+RTN_CAM
+Text Label 6150 2100 2    50   ~ 0
+RTN_CAM
+Text Label 6150 2250 2    50   ~ 0
+SHUTTERCAM
+Text Label 6150 2400 2    50   ~ 0
+SHUTTERCAM
+Text Label 7500 1300 2    50   ~ 0
+VDD
+Text Label 7500 1450 2    50   ~ 0
+COLECT_FLASH
+Text Label 7500 1900 2    50   ~ 0
+RTN_FLASH
+Text Label 7500 2050 2    50   ~ 0
+RTN_FLASH
+Text Label 7500 2200 2    50   ~ 0
+SHUTTERFLASH
+Text Label 7500 2350 2    50   ~ 0
+SHUTTERFLASH
+NoConn ~ 7500 1600
+NoConn ~ 7500 1750
+NoConn ~ 6150 1650
+NoConn ~ 6150 1800
+NoConn ~ 8400 3450
+NoConn ~ 5750 4100
+NoConn ~ 6150 5800
+NoConn ~ 6150 5700
+NoConn ~ 6150 5600
+NoConn ~ 6150 5500
+NoConn ~ 6150 5400
+NoConn ~ 6150 5300
+NoConn ~ 6150 5200
+NoConn ~ 6150 5100
+NoConn ~ 6150 4900
+NoConn ~ 6150 4600
+NoConn ~ 6150 4500
+NoConn ~ 5150 4500
+NoConn ~ 5150 4600
+$Comp
+L Device:C C1
+U 1 1 5CE6C5B5
+P 6800 3500
+F 0 "C1" H 6915 3546 50  0000 L CNN
+F 1 "C" H 6915 3455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 6838 3350 50  0001 C CNN
+F 3 "~" H 6800 3500 50  0001 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Text Label 6800 3350 1    50   ~ 0
+VDD
+Text Label 6800 3650 3    50   ~ 0
+GND
+NoConn ~ 3200 4800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CE986D8
+P 9300 2850
+F 0 "H1" H 9400 2896 50  0000 L CNN
+F 1 "MountingHole" H 9400 2805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9300 2850 50  0001 C CNN
+F 3 "~" H 9300 2850 50  0001 C CNN
+	1    9300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CE98758
+P 9300 3150
+F 0 "H2" H 9400 3196 50  0000 L CNN
+F 1 "MountingHole" H 9400 3105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9300 3150 50  0001 C CNN
+F 3 "~" H 9300 3150 50  0001 C CNN
+	1    9300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CE98823
+P 9300 3550
+F 0 "H3" H 9400 3596 50  0000 L CNN
+F 1 "MountingHole" H 9400 3505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9300 3550 50  0001 C CNN
+F 3 "~" H 9300 3550 50  0001 C CNN
+	1    9300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CE9882A
+P 9300 3850
+F 0 "H4" H 9400 3896 50  0000 L CNN
+F 1 "MountingHole" H 9400 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9300 3850 50  0001 C CNN
+F 3 "~" H 9300 3850 50  0001 C CNN
+	1    9300 3850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
